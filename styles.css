@@ -15,13 +15,16 @@
     margin: 0;
 }
 
+html {    
+    font-size: 20px;
+}
+
 body {
     background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/groovepaper.png);
     background-attachment: fixed;
 }
 
 main {
-    margin: 40px 25% 40px 25%;
     min-width: 40ch;
 }
 
@@ -65,7 +68,7 @@ h1, h2, h3 {
 
 p, ul {
     font-family: var(--font-2);
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 150%;
     text-indent: 20px;
     text-align: justify;
@@ -74,18 +77,18 @@ p, ul {
 
 figcaption {
     font-family: var(--font-1);
-    font-size: 18px;
+    font-size: 0.7rem;
     line-height: 85%;
     text-align: center;
     padding: 1ch 0;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 1.5rem;
     font-weight: lighter;
 }
 
@@ -112,23 +115,33 @@ hr {
     opacity: 0.6;
 }
 
-@media (max-width: 1000px) { 
-    main {
-        margin: 20px 15% 20px 15%;
-    }
-
-    img {
-        max-height: 275px;
-    }
-}
-
-@media (max-width: 500px) { 
+@media (min-width: 550px) { 
     main {
         margin: 0px;
     }
 
     img {
-        max-height: 200px;
+        max-height: 350px;
+    }
+}
+
+@media (min-width: 850px) { 
+    main {
+        margin: 1rem 15% 1rem 15%;
+    }
+
+    img {
+        max-height: 350px;
+    }
+}
+
+@media (min-width: 1150px) { 
+    main {
+        margin: 2rem 25% 2rem 25%;
+    }
+
+    img {
+        max-height: 350px;
     }
 }
 
