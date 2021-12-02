@@ -2,7 +2,7 @@
   "private": "true",
   "scripts": {
     "build": "webpack --mode=development",
-    "prod": "webpack --mode=production && del .\\public\\index.js"
+    "prod": "webpack --mode=production && del .\\docs\\index.js"
   },
   "devDependencies": {
     "css-loader": "^6.5.1",
