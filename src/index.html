@@ -24,7 +24,13 @@
                 <h2 class="visually-hidden">Works of Leonardo-da-Vinci</h2>
 
                 <figure id="img-div">
-                    <img id="image" class="figureImage" src="<%=require('./images/joconde.jpg')%>" alt="">
+                    <img 
+                        id="image" 
+                        class="figureImage" 
+                        src="<%=require('./images/joconde.jpg')%>" 
+                        srcset="<%=require('./images/joconde_small.jpg')%> 375w,
+                                <%=require('./images/joconde_medium.jpg')%> 800w" 
+                        alt="">
                     <figcaption id="img-caption" class="figureCaption">The Mona Lisa, Leonardo's painting.</figcaption>
                 </figure>
 
